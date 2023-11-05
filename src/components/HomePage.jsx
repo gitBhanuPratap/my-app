@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Outlet, Link } from "react-router-dom";
 
 const HomePage = () => {
     return (
@@ -33,12 +34,13 @@ const HomePage = () => {
 
             </div>
             <div className='mx-auto flex flex-row m-8'>
-                <a href="">
+                <a href="https://drive.google.com/drive/folders/1fvlC6THU1Lp1MvE1RcJkZOTGoQjp77cL?usp=sharing">
                     <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-2xl px-24 py-5 text-center mr-2 mb-2">Download content</button>
                 </a>
-                <a href="/feedback" target='black'>
+                <Link to="/feedback">
                     <button type="button" class="text-white bg-gradient-to-r from-blue-500 to-cyan-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-2xl px-24 py-5 text-center mr-2 mb-2">Go to Feedback</button>
-                </a>
+                </Link>
+                <Outlet />
 
             </div>
 
@@ -50,6 +52,7 @@ const HomePage = () => {
                     Drive Safely and Stay Alert!</p>
             </div>
         </div>
+        
     )
 }
 export default HomePage;
