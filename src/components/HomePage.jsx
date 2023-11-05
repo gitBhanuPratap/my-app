@@ -43,9 +43,9 @@ const HomePage = () => {
             </div>
 
             <div className="aspect-w-16 aspect-h-9">
-                <iframe src="https://youtu.be/V2CbHFqpn9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1583" height="584" src="https://www.youtube.com/embed/V2CbHFqpn9c" title="Team Atom Video || PCAS Feature Simulation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div className="text-center mt-16">
+            <div className="text-center mt-16 mb-16">
                 <p className='text-lg'>Your contribution is pivotal in shaping the future of automotive safety. Thank you for participating in this vital phase of development.
                     Drive Safely and Stay Alert!</p>
             </div>
